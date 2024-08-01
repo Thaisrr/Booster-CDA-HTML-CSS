@@ -1,0 +1,17 @@
+h1 {
+    color: red; /* modifie la couleur du texte */
+    font-size: 50px;
+    font-family: 'Courgette', script;
+    font-weight: 400; /* graisse entre 100 et 900, 400 = normal, 100 fin, 900 très gras */
+    text-decoration: underline blue 10px; /* underline ,line-through, overline  + couleur + taille */
+    text-align: center;
+    text-transform: uppercase; /* lowercase, capitalize, uppercase */
+    font-style: italic;
+    letter-spacing: 10px;
+    word-spacing: 100px;
+    text-shadow: 5px 5px 5px black; /* alignement horizontal - vertical - flou - couleur */
+}
+
+p {
+    line-height: 1.5;
+}

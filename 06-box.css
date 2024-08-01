@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 100px; /* largeur */
+    border: solid 5px; /* type de bordure ( solid, dotted, ... ) + épaisseur de la bordure */
+    padding: 20px; /* marge intérieur, entre le contenu et la bordure */
+    margin: 20px 50px 100px 30px; /* marge extérieur entre la box, et les éléments */
+    /* margin-top: 100px; -> on peut décomposer avec margin-top, margin-bottom, margin-right ... */
+
+    box-sizing: content-box; /* par défaut, défini la taille de la boîte par rapport à son contenu.
+    On additionne ensuite le padding, et la taille de la bordure */
+}
+
+.box {
+    box-sizing: border-box; /* définir la taille de la boîte par rapport aux bordures */
+    box-shadow: 5px 5px 5px deeppink;
+    border-radius: 50% 20%;
+    border-top-left-radius: 5px;
+    background-color: darkorange;
+}

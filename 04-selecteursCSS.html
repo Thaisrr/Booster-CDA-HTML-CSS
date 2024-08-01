@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Selecteurs CSS</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        #monSuperP {
+            color: darkgoldenrod;
+        }
+
+        section p {
+            color: yellow;
+        }
+
+        /* parent enfant {} // tous les enfants d'un parent */
+        section > p {
+            color: green;
+        }
+
+        /* parent > enfant {} // tous les enfants direct d'un parent */
+        section .blue {
+            color: turquoise;
+        }
+
+    </style>
+</head>
+<body>
+
+<p style="color: aqua" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolor dolore eveniet ex excepturi expedita hic, laudantium maxime minima odio quibusdam quis quod reprehenderit rerum sed tempore totam voluptatibus!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate molestiae molestias qui voluptate? Perspiciatis rem rerum veniam! Alias cum eaque eum minus nulla omnis placeat quae quo recusandae tenetur?</p>
+<p class="blue" id="monSuperP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate molestiae molestias qui voluptate? Perspiciatis rem rerum veniam! Alias cum eaque eum minus nulla omnis placeat quae quo recusandae tenetur?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate molestiae molestias qui voluptate? Perspiciatis rem rerum veniam! Alias cum eaque eum minus nulla omnis placeat quae quo recusandae tenetur?</p>
+<div class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate molestiae molestias qui voluptate? Perspiciatis rem rerum veniam! Alias cum eaque eum minus nulla omnis placeat quae quo recusandae tenetur?</div>
+
+<section>
+    <h2>Ma Section</h2>
+    <p>Paragraphe enfant de la section</p>
+    <p class="blue">Paragraphe enfant de la section</p>
+    <p>Paragraphe enfant de la section</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur debitis delectus, eligendi enim labore quam rem sunt tenetur! Expedita hic mollitia praesentium quos sapiente? Illum maiores non ratione!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur debitis delectus, eligendi enim labore quam rem sunt tenetur! Expedita hic mollitia praesentium quos sapiente? Illum maiores non ratione!</p>
+        <p class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur debitis delectus, eligendi enim labore quam rem sunt tenetur! Expedita hic mollitia praesentium quos sapiente? Illum maiores non ratione!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur debitis delectus, eligendi enim labore quam rem sunt tenetur! Expedita hic mollitia praesentium quos sapiente? Illum maiores non ratione!</p>
+    </div>
+    <p>Encore un enfant de la section</p>
+</section>
+
+
+
+</body>
+</html>
