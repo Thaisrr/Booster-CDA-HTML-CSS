@@ -46,3 +46,17 @@ Aujourd'hui, on en est à la version 5 de HTML
     - H1 : une seule fois par page, c'est le premier titre qui doit apparaître.
     - H2, H3, ... H6 : on les mets dans l'ordre.
     -> Pour le référencement et l'accessibilité
+
+
+## Balises sémantiques : 
+
+- Nav : encadre une liste de liens de navigations. peut être utilisé plusieurs fois dans la page.
+- Header : entête d'une page, d'une section, d'un article... peut être utilisé plusieurs fois.
+- Footer : pied de page / de section / d'article. Utilisable plusieurs fois.
+- Section : encadre un bloc de code sur un même sujet / un même contexte. Utilisable plusieurs fois.
+- Article : comme section, on peut utiliser l'un ou l'autre
+- Aside : contenu secondaire ou complémentaire au contenu principal. S'utilise en dehors de main, et peut être utilisé plusieurs fois.
+- Main : contenu principal de la page. Le contenu doit être unique. Ne s'utilise qu'une fois par page.
+
+-> Les div (ou division) n'ont pas de valeur sémantique. Il faut les utiliser en dernier recours, 
+pour encadrer du code à styliser / placer sur la page par exemple.
