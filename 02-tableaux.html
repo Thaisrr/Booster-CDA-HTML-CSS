@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Tableaux</title>
+</head>
+<body>
+<!-- Ne pas utiliser border : déprécié -->
+    <table border="1">
+        <tr> <!-- ligne de tableau -->
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>Mon Panier</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produit</th>
+                    <th scope="col">Quantité</th>
+                    <th scope="col">Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Pomme</th>
+                    <td>2</td>
+                    <td>5€</td>
+                </tr>
+                <tr>
+                    <th scope="row">Poires</th>
+                    <td>2</td>
+                    <td>5€</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">Patates</th>
+                    <td>2</td>
+                    <td>5€</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>6€</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="2">Total</th>
+                <td>15€</td>
+            </tfoot>
+    </table>
+</body>
+</html>

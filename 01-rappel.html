@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Un commentaire -->
+        <meta charset="UTF-8" />
+        <title>Rappel HTML</title>
+    </head>
+    <body>
+    <!-- Les balises de contenu -->
+
+    <p>Paragraphe</p>
+    <p>Chaque paragraphe se met l'un en dessous de l'autre.</p>
+
+    <h1>Titre de niveau 1</h1>
+
+    <h2>Titre secondaire 1</h2>
+    <h3>Sous titre</h3>
+    <p>Contenu</p>
+    <h3>Sous Titre 2</h3>
+    <p>Contenu</p>
+    <h2>Titre secondaire 2</h2>
+
+    <!-- Les balises de "texte enrichi" -->
+    <p>Les balises de texte enrichi permettent d'englober un mot, ou une partie de texte, puis lui
+    apporter un style spécifique mais aussi son poids dans le référencement. Ce sont des balises inline</p>
+    <p>
+        <strong>Met en gras + mot clef, </strong>
+        <em>Met en italique + mot clef, </em>
+        <span>Encadre sans modifier le style, </span>
+        <i>Met en italique, </i>
+        <b>Met en gras, </b>
+        <u>Souligne le texte, </u>
+        <mark>Surligne le texte, </mark>
+        <sup>Met le texte en indice ( puissance ) </sup>
+        <sub>Met le texte en exposant </sub>
+        <small>Met le texte en petit</small>
+        <del>Barre le texte, ( pour indiquer un texte qui a été supprimé )</del>
+        <ins>Indique un texte ajouté</ins>
+    </p>
+
+    <!-- Les listes -->
+    <ul> <!-- Liste non ordonnée : juste des points -->
+        <li>Liste Item</li>
+        <li>Liste Item</li>
+        <li>Liste Item</li>
+        <li>Liste Item</li>
+    </ul>
+
+    <!--
+    attributs :
+        - reversed : inverse le sens de la liste
+        - start : le nombre à laquelle commence la liste
+        - type : le type de numérotation : 1 A a I i
+    -->
+    <ol reversed start="5" type="A"> <!-- Liste Ordonnée -->
+        <li>Liste item</li>
+        <li>Liste item</li>
+        <li>Liste item</li>
+        <li>Liste item</li>
+    </ol>
+
+    <ul>
+        <li>Option 1</li>
+        <li>Option 2</li>
+        <li>Option 3
+            <ul>
+                <li>Sous Option a</li>
+                <li>Sous Option b</li>
+            </ul>
+        </li>
+        <li>Option 4</li>
+    </ul>
+
+    <!-- Les balises de structure -->
+
+    <div>
+        div : division, pas de valeur sémantique
+        - assez peu de style par défaut
+        - on s'en sert majoritairement pour encadrer des blocs à styliser
+    </div>
+
+    <section>
+        - a un rôle sémantique pour le SEO / Accessibilité
+        - Implique qu'il y en a plusieurs
+    </section>
+
+    <aside>
+        Indique un contenu secondaire, ou complémentaire au contenu principal.
+    </aside>
+
+    <main>
+        Contenu principal de la page.
+        Un seul dans la page
+        C'est l'utilisateur est venu chercher, en rapport avec le H1
+        Le contenu doit être unique dans le site
+    </main>
+
+    <header>
+        Entête
+            - Peut être utilisé plusieurs fois dans une page
+            - Indique une entête de page / de section / de card, ect...
+    </header>
+
+    <nav>
+        - Indique un groupe de liens de navigation
+        - Peut être une barre de navigation / un menu / une liste de liens
+    </nav>
+
+    <footer>
+        Même règle que pour le header, mais indique un pied de page / section / card...
+    </footer>
+
+    <article>
+        Indique un article, peut-être utilisé plusieurs fois dans une page.
+    </article>
+
+    <!-- Les liens ---->
+    <section id="links">
+        <h2>Les liens</h2>
+
+        <p> Lien externe :
+            <a href="https://www.utopios.fr">Utopios</a>
+        </p>
+        <p> Lien interne
+            <a href="cours.md">Le Cours</a>
+        </p>
+        <p>Ancre
+            <a href="#links">Ancre vers la section "les liens"</a>
+        </p>
+        <p>Mail
+            <a href="mailto:thais.laboure@outlook.com">thais.laboure@outlook.com</a>
+        </p>
+        <p>Telephone
+            <a href="tel:0321101010">03 21 10 10 10</a>
+        </p>
+        <p> Téléchargement
+            <a href="cours.md" download="cours-html-css.md">Télécharger le cours</a>
+        </p>
+    </section>
+
+    <!-- Medias -->
+    <p>
+        <img
+            src="https://paca.lpo.fr/blogs/toulon/files/2020/05/toulon-le-goeland-merite-t-il-sa-mauvaise-reputation-goeland-les-oiseaux-de-corse-en-images-corse-ornitho-canal-blog.jpg"
+            alt="Description de l'image :pour le référencement, l'accessibilité, et quand l'image ne se charge pas."
+        />
+    </p>
+
+    <p>
+        <audio autoplay controls src="#"></audio>
+    </p>
+
+    <p>
+        <video>
+            <source src="#source-1" type="video/mp4" />
+            <source src="#source-2" type="video/mp4" />
+        </video>
+    </p>
+
+    <!-- Autres balises -->
+    <br /> <!-- retour à la ligne : NE PAS UTILISER A LA PLACE DES PARAGRAPHES !-->
+    <hr/> <!-- Séparation  -->
+
+    <figure>
+        <img src="https://paca.lpo.fr/blogs/toulon/files/2020/05/toulon-le-goeland-merite-t-il-sa-mauvaise-reputation-goeland-les-oiseaux-de-corse-en-images-corse-ornitho-canal-blog.jpg" alt="description de l'image" />
+        <figcaption>Un super Goéland !</figcaption>
+    </figure>
+
+    <address>
+        <ul>
+            <li><a href="mailto:...">Adresse email</a> </li>
+            <li><a href="tel:...">06 00 00 00 00</a> </li>
+            <p>123 rue des Lilas, 59000 Lille</p>
+        </ul>
+    </address>
+
+    <figure>
+        <blockquote cite="https://www.le-site-dont-vient-ma-citation.fr">
+            <p>Une super citation !</p>
+        </blockquote>
+        <figcaption>L'auteur / autrice de la citation !,
+            <cite>Dans son super livre bidule</cite>
+        </figcaption>
+    </figure>
+    </body>
+</html>

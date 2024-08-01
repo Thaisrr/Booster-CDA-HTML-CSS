@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Formulaires</title>
+</head>
+<body>
+
+<h1>Les Formulaires</h1>
+
+<!--
+ Method :
+    - GET : pour demander des informations ( exemple barre de recherche )
+    - POST : pour envoyer des informations ( exemple formulaire d'inscription )
+ Action: fichier qui doit traiter le formulaire (par exemple, en php )
+ nom="jean-michel",
+
+ Autocomplete : https://developer.mozilla.org/fr/docs/Web/HTML/Attributes/autocomplete
+ -->
+<form method="get" action="#">
+    <div>
+        <label for="name">Nom</label>
+        <input
+                id="name"
+                type="text"
+                name="nom"
+                placeholder="Entrez votre nom"
+                value="Jean Michel"
+                required
+                minlength="2"
+                maxlength="100"
+                autocomplete="name"
+        />
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input
+                id="age"
+                name="age"
+                type="number"
+                min="0"
+                max="1000"
+        />
+    </div>
+    <div>
+        <label for="quantity">Satisfaction</label>
+        <input
+                id="quantity"
+                name="quantity"
+                type="range"
+                min="0"
+                max="100"
+                step="10"
+        />
+    </div>
+    <div>
+       <fieldset> <!-- pour regrouper des éléments de formulaire en groupe -->
+           <legend>Livraison</legend>
+           <p>
+               <label for="place">Sur place</label>
+               <input required type="radio" name="livraison" id="place" value="sur-place" />
+           </p>
+           <p>
+               <label for="away">A Emporter</label>
+               <input required type="radio" name="livraison" id="away" value="a-emporter">
+           </p>
+       </fieldset>
+    </div>
+    <div>
+        <label for="ok">Est-ce que ça va ?</label>
+        <input id="ok" name="ok" type="checkbox"/>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Crudités</legend>
+            <p>
+                <label for="tomates">Tomates</label>
+                <input type="checkbox" id="tomates" value="tomates" name="crudites" />
+            </p>
+            <p>
+                <label for="oignons">Oignons</label>
+                <input type="checkbox" id="oignons" value="oignons" name="crudites" />
+            </p>
+            <p>
+                <label for="salade">Salade</label>
+                <input type="checkbox" id="salade" value="salade" name="crudites" />
+            </p>
+        </fieldset>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+    </div>
+    <div>
+        <label for="tel">Téléphone</label>
+        <input type="tel" name="tel" id="tel"/>
+    </div>
+    <div>
+        <label for="site">Votre portfolio</label>
+        <input type="url" name="site" id="site" />
+    </div>
+    <div>
+        <label for="date">Date de livraison</label>
+        <input type="date"  name="date" id="date" min="2024-07-31" max="2025-08-01"/>
+    </div>
+    <div>
+        <label for="hour">Heure de livraison</label>
+        <input type="time" name="hour" id="hour" />
+    </div>
+    <div>
+        <label for="color">Votre couleur préférée</label>
+        <input type="color" name="color" id="color">
+    </div>
+    <div>
+        <label for="search">Rechercher</label>
+        <input type="search" name="search" id="search" />
+    </div>
+    <div>
+        <label for="msg">Message</label>
+        <textarea minlength="10" maxlength="1000" id="msg">Des bisous !</textarea>
+    </div>
+    <div>
+        <label for="animal">Votre animal préféré ?</label>
+        <select id="animal" name="animal">
+            <optgroup label="Animaux domestiques">
+                <option value="croco">Alligator Commun</option>
+                <option value="shark">Requin Marteau</option>
+                <option value="truc">Mante Religieuse</option>
+            </optgroup>
+            <optgroup label="Animaux Sauvages">
+                <option value="unicorn">Licorne</option>
+                <option value="fish">Poisson Clown</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div>
+        <button type="submit">Envoyer le formulaire</button>
+        <button type="reset">Réinitialiser le formulaire</button>
+    </div>
+</form>
+
+</body>
+</html>
