@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+ul {
+    color: darkgreen;
+    list-style-type: square;
+}
+
+h1 {
+    width: 50%;
+    background: greenyellow;
+    text-align: center;
+    font-family: 'Courgette', script;
+    text-shadow: 3px 3px 5px red;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+section {
+    padding: 20px 0;
+    border: solid goldenrod 3px;
+    margin: 20px auto;
+}
+
+p {
+    text-align: right;
+    color: green;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: line-through aqua wavy;
+}
+
+.green {
+    color: aqua;
+    text-decoration: green line-through dotted;
+}
