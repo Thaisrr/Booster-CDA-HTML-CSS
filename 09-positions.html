@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Positions</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        .bloc {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background: blue;
+            border: solid 2px black;
+        }
+
+        .bloc:nth-child(1) {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .bloc:nth-child(2) {
+            background-color: pink;
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            z-index: 1;
+        }
+
+        .bloc:nth-child(3) {
+            background-color: yellow;
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+        }
+
+        .bloc:nth-child(4) {
+            background-color: turquoise;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bloc"></div>
+<div class="bloc"></div>
+<div class="bloc"></div>
+<div class="bloc"></div>
+<div class="bloc"></div>
+<div class="bloc"></div>
+<div class="bloc"></div>
+
+</body>
+</html>

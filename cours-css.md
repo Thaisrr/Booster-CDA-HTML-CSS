@@ -229,3 +229,78 @@ Selectionne la première ligne d'un élément
 ```css
 p:first-line {}
 ```
+
+## Le Display
+
+C'est le comportement d'un élément par rapport aux éléments autour
+
+### inline
+
+Un élément inline se place en ligne, à côté d'un autre élément inline. 
+Sa taille correspond à son contenu.
+On ne peut ni modifier la hauteur, ni la largeur.
+
+Par défaut : `a`, `span`, `strong`, `i`, `b`, `em`, ... -> balises de texte enrichies
+
+### block
+
+Les élements de type block se placent les uns en dessous des autres, le en haut à gauche possible.
+Ils prennent toute la largeur disponible ( width : 100%).
+Leur hauteur correspond au contenu.
+On peut modifier la largeur et la hauteur.
+
+Défaut : les balises de structure : `div`, `p`, `h1`, `h2`, `article`, `section`...
+
+### inline-block
+
+Les éléments se placent les uns à côtés des autres ( entre élément inline / inline-block ).
+On peut modifier leur hauteur / largeur.
+
+Par défaut : `img`, `input`, `button`, `textarea`
+
+=> Astuce : pour centrer un élément de type inline, ou inline block, on utilise `text-align: center` sur le parent.
+
+### none
+
+En display none, l'élément est supprimé du document.
+
+
+## La Position
+
+Modifier la façon dont un élément se positionner par rapport à sa position initiale, ou par rapport aux autres éléments.
+
+Par défaut, c'est la `position: static` qui est utilisée.
+
+### Position relative
+
+Modifie la position d'un élément par rapport à sa position initiale.
+Pour les autres éléments, c'est comme si l'élément n'avait pas bougé.
+
+### Position absolute
+
+En position absolute, on place l'élément par rapport au parent le plus proche ayant une position relative.
+( ou autre que static ). Si aucun parent n'est trouvé, alors elle se positionne par rapport au body.
+Pour les autres éléments, l'élément en absolute sort du flux, il n'existe plus. 
+
+### Position fixed
+
+En position fixed, l'élément sort du flux.
+Il se place par rapport à la fenêtre, et reste à sa place malgré le scroll.
+
+### Position sticky
+
+En position sticky, l'élément se positionne là où il doit être par défaut, 
+Mais il va prendre une position au scroll de son parent.
+Quand le disparait, l'élément disparait aussi
+
+### z-index
+
+Il permet de gérer la superposition des éléments, on indiquant leur position sur l'axe Z.
+C'est l'élément avec un z-index plus élevé qui sera au dessus des autres.
+On peut aller dans le négatif pour reculer un élément.
+
+
+## Float
+
+Un élément en float est retiré du flux normal du document pour se positionner soit à droite, soit à gauche.
+Les autres éléments frères se positionneront autour du float.
