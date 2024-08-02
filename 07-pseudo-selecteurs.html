@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudos Selecteurs</title>
+    <style>
+        button {
+            background: turquoise;
+            border: solid turquoise 1px;
+            color: black;
+            padding: 10px 20px;
+        }
+
+        button:hover {
+            background: white;
+            cursor: pointer;
+        }
+
+        input:focus {
+            border: solid 3px blue;
+        }
+
+        a:link {
+            color: turquoise;
+            font-size: 1.2em;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: violet;
+        }
+
+        a:hover {
+            border-bottom: solid 1px turquoise;
+        }
+
+        p:first-child {
+            color: violet;
+        }
+
+        article:first-of-type {
+            color: red;
+        }
+
+        p:last-child {
+            color: green;
+        }
+
+        article:last-of-type {
+            color: yellow;
+        }
+
+        p:nth-child(2) {
+            color: rebeccapurple;
+        }
+
+        p:nth-child(odd) {
+            text-decoration: underline;
+        }
+
+        p:first-letter {
+            color: red;
+        }
+
+        p:first-line {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+<button>Clic me !</button>
+
+<div>
+    <input>
+</div>
+
+<div>
+    <a href="#">Un super lien !</a>
+</div>
+
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore hic quos reiciendis. Animi consequatur cupiditate delectus est eveniet fugiat impedit, magni maxime nam necessitatibus, nisi quaerat quam, quibusdam quo?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore hic quos reiciendis. Animi consequatur cupiditate delectus est eveniet fugiat impedit, magni maxime nam necessitatibus, nisi quaerat quam, quibusdam quo?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore hic quos reiciendis. Animi consequatur cupiditate delectus est eveniet fugiat impedit, magni maxime nam necessitatibus, nisi quaerat quam, quibusdam quo?</p>
+    <article>Coucou</article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore hic quos reiciendis. Animi consequatur cupiditate delectus est eveniet fugiat impedit, magni maxime nam necessitatibus, nisi quaerat quam, quibusdam quo?</p>
+    <article>Coucou</article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolor harum nobis quam quibusdam veniam veritatis. Alias aperiam consequatur cupiditate debitis ex molestias necessitatibus odit suscipit. Aliquid dignissimos in nemo.</p>
+</div>
+</body>
+</html>

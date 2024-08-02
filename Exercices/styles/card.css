@@ -1,0 +1,46 @@
+.card {
+    box-shadow: 2px 2px 5px rgba(158, 158, 158, 0.42);
+    border-radius: 20px 0 20px 0;
+    width: 450px;
+    overflow: hidden;
+}
+
+.card-header {
+    height: 220px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-header img {
+    width: 100%;
+}
+
+.card-body {
+    width: 90%;
+    margin: 20px auto 0;
+    border-bottom: 1px solid black;
+}
+
+.card-body p:first-letter {
+    font-size: 2em;
+    font-family: script;
+}
+
+.card-footer {
+    text-align: center;
+    padding: 20px 0;
+    height: 4em;
+}
+
+a:link {
+    font-family: script;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-size: 3em;
+    cursor: pointer;
+}

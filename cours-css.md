@@ -62,3 +62,170 @@ Valeurs fixes
 - cm
 - points ( imprimerie )
 - ...
+
+
+## Autres Selecteurs
+
+Selecteurs de base : balise, .class, #id
+
+### Selecteur universel
+
+```css
+* {
+    box-sizing: border-box;
+}
+```
+
+### Selecteur de classe plus précis
+
+
+```css
+.class1.class2 {
+    /* selectionne les éléments qui ont class1 ET class2 */
+}
+```
+
+### Selecteur de descendant
+
+Selectionne un enfant d'un élément
+```css
+.parent .enfant {
+    /* ici, on stylise .enfant quand il est dans un .parent */
+}
+```
+
+### Selecteur de descendant direct
+
+Selectionne uniquement les enfants directs d'un parent
+```css
+.parent > .enfant {}
+```
+
+### Selecteur d'élément suivant
+
+```css
+.label + input {
+    /* selectionne les input qui suivent un label */
+}
+```
+
+### Selecteur d'élément suivant direct
+
+Selectionne l'élément qui suit directement
+
+```css
+p ~ div {
+    /* selectionne les div qui suivent directement un p */
+}
+```
+
+## Les Pseudos Selecteurs
+
+Permettent de modifier un élément en fonction de son etat
+
+### Hover
+
+Permet de donner un style spécifique à un élément quand la souris est dessus
+
+```css
+button:hover {
+    
+}
+```
+
+### focus
+
+Lorsque l'utilisateur.trice est sur un élément cliquable ( input, button, lien, ...)
+
+```css
+input:focus {}
+```
+
+### active
+
+Lorsqu'on clique sur un élément ( très bref )
+
+```css
+a:active {}
+```
+
+### visited
+
+Lorsqu'un lien à déjà été visité
+
+```css
+a:visited {}
+```
+
+### link
+
+Etat d'un lien par défaut ( quand il n'y a pas d'action dessus )
+
+```css
+a:link {}
+```
+
+Pour modifier un lien, il faut respecter un ordre dans les pseudo selecteurs : 
+LoVe Hate
+Link - Visited - Hover
+
+## Les pseudo selecteur de position
+
+Selectionne des éléments en fonction de leur position
+
+### first-child
+- Selectionne l'élément quand il est le premier enfant
+
+```css
+p:first-child {}
+```
+
+### first-of-type
+Selectionne le premier enfant de son type, dans une liste d'éléments frères
+
+```css
+article:first-of-type {}
+```
+
+### last-child
+Selectionne le dernier enfant d'une liste
+
+```css
+p:last-child {}
+```
+
+### last-of-type
+Selectionne le dernier element de son type dans une liste de frères
+
+```css
+article:last-of-type {}
+```
+
+### nth-child
+Selectionne un élément à une position spécifique
+
+```css
+p:nth-child(2) {}
+```
+
+On peut selectionner un élément sur deux, les pairs (even) et impairs (odd)
+
+```css
+p:nth-child(even) {}
+```
+
+### first-letter
+
+Selectionne la première lettre d'un élément
+
+```css
+p:first-letter {}
+```
+
+### first-line
+
+Selectionne la première ligne d'un élément
+
+```css
+p:first-line {}
+```
