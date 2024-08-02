@@ -33,6 +33,14 @@
     height: 4em;
 }
 
+a {
+    transition-property: font-size;
+    transition-delay: 0ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+   /* transition: font-size 0.5s 0s ease-in-out; */
+}
+
 a:link {
     font-family: script;
     font-size: 2em;
