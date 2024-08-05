@@ -335,3 +335,4 @@ Par défaut, l'ordre d'un élément est à 0. On va mettre -1 pour mettre devant
 On peut demander à un élément d'être plus grand que les autres avec `flex-grow`;
 
 Pour apprendre les flex : https://flexboxfroggy.com/#fr
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice FlexBoxes</title>
+    <style>
+        .grid {
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: auto;
+            background: ivory;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+            width: 100px;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .order {
+            order: -1;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="grid">
+    <article class="item">A</article>
+    <article class="item">B</article>
+    <article class="item">C</article>
+    <article class="item order">D</article>
+    <article class="item">E</article>
+    <article class="item">F</article>
+    <article class="item">G</article>
+</div>
+
+</body>
+</html>
