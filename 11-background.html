@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Background</title>
+</head>
+<style>
+    .bg {
+        width: 500px;
+        aspect-ratio: 1/1;
+        border: solid black 3px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPp58IllGPPRuzc2cIjKoIFBc2BGuRBNGYt4dq6bXv-QXxANpVOaMwrD2zt1tGxl81U4&usqp=CAU");
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-position: bottom center;
+        background-color: pink;
+    }
+
+    .container {
+        width: 1000px;
+        height: 1000px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPp58IllGPPRuzc2cIjKoIFBc2BGuRBNGYt4dq6bXv-QXxANpVOaMwrD2zt1tGxl81U4&usqp=CAU");
+
+    }
+    .bd {
+        width: 500px;
+        aspect-ratio: 1/1;
+        background-color: rgba(255, 192, 203, 0.25);
+        backdrop-filter: blur(5px) grayscale(100%);
+        border-radius: 20px;
+        margin: 100px;
+        text-align: center;
+    }
+</style>
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+    <div class="bd">Mon Texte</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les FlexBoxes</title>
+    <style>
+        .parent {
+            border: solid 1px;
+            height: 500px;
+            display: flex;
+            justify-content: flex-start; /* défaut flex-start */
+            align-items: baseline; /* stretch */
+            width: 100px;
+            /*flex-wrap: wrap;
+            flex-direction: column; */
+            flex-flow: row wrap; /* reprend flex-direction et flex-wrap */
+        }
+
+        .item {
+            background-color: #4c90bf;
+            border: solid 1px black;
+        }
+
+        .center {justify-content: center}
+        .end {justify-content: flex-end}
+        .around {justify-content: space-around}
+        .between {justify-content: space-between}
+        .evenly {justify-content: space-evenly}
+
+        .B {
+            order: -1;
+            flex-grow: 1;
+        }
+
+        .C {
+            flex-basis: 50px;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parent">
+    <div class="item">A</div>
+    <div class="item B">B</div>
+    <div class="item C">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+    <div class="item">I</div>
+    <div class="item">J</div>
+</div>
+
+<h2>Center</h2>
+<div class="parent center">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+</div>
+
+<h2>Flex-end</h2>
+<div class="parent end">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+</div>
+
+<h2>Space Between</h2>
+<div class="parent between">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+</div>
+
+<h2>Around</h2>
+<div class="parent">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+</div>
+
+<h2>Evenly</h2>
+<div class="parent evenly">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+</div>
+
+
+</body>
+</html>

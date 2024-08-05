@@ -304,3 +304,34 @@ On peut aller dans le négatif pour reculer un élément.
 
 Un élément en float est retiré du flux normal du document pour se positionner soit à droite, soit à gauche.
 Les autres éléments frères se positionneront autour du float.
+
+## Les Flexboxes
+
+Les flexboxes permettent de gérer la disposition des éléments par rapport à leur parent.
+C'est le parent qui va gérer la façon dont les enfants vont se disposer.
+
+Sur le conteneur ( le parent : )
+```css
+.parent {
+    display: flex;
+}
+```
+
+Ensuite, on gère l'alignement horizontal avec 
+`justify-content` : flex-start (defaut) | center | flex-end | space-between | space-around | space-evenly
+
+Et l'alignement vertical avec
+`align-items` : flex-start | flex-end | stretch ( defaut ) | center | baseline
+
+Par défaut, le parent va essayer de garder tous ses enfants sur une seule ligne, quitte à déborder/
+On gère ce comportement avec `flex-wrap: wrap`
+
+On peut gérer la direction des enfants ( row ou column ) avec `flex-direction`.
+Attention, en column, justify-content sert à modifier l'axe Y, et align-items l'axe X !( ça s'inverse )
+
+On peut jouer avec l'ordre des éléments en leur mettant la propriété `order`.
+Par défaut, l'ordre d'un élément est à 0. On va mettre -1 pour mettre devant, ou 1 pour mettre à la fin.
+
+On peut demander à un élément d'être plus grand que les autres avec `flex-grow`;
+
+Pour apprendre les flex : https://flexboxfroggy.com/#fr
