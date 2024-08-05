@@ -353,4 +353,7 @@ C'est le parent qui va gérer la disposition des enfants.
 
 La première chose à faire sur une grid, c'est gérer les colonnes : 
 - `grid-template-columns` : on donne le nombre de colonne et leur taille ( en px, %, ect... ou en fr - fraction )
-- 
+
+
+https://cssgridgarden.com/#fr
+https://css-tricks.com/snippets/css/complete-guide-grid/
