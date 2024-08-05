@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+}
+
+ul a:link, nav a:visited {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.3em;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+header {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFwil51eVM9H76bG8Mw2h5qQjM5lrBb5jeCg&s");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    font-size: 3em;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+main {
+    width: 80%;
+    margin: 100px auto;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-bottom: solid 1px orange;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 0 orange;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    box-shadow: 2px 2px 5px rgba(145, 145, 145, 0.5);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+}
