@@ -336,3 +336,21 @@ On peut demander à un élément d'être plus grand que les autres avec `flex-gr
 
 Pour apprendre les flex : https://flexboxfroggy.com/#fr
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+## Les Grids
+
+Les grids sont un système de mise en page bidimensionnel, sous forme de grille, qui permet de créer des layouts complexes.
+
+C'est le parent qui va gérer la disposition des enfants.
+
+```css
+.parent {
+    display: grid;
+}
+```
+
+### Les colonnes et les lignes
+
+La première chose à faire sur une grid, c'est gérer les colonnes : 
+- `grid-template-columns` : on donne le nombre de colonne et leur taille ( en px, %, ect... ou en fr - fraction )
+- 
