@@ -1,0 +1,80 @@
+body {
+    background-color: paleturquoise;
+}
+
+.container {
+    width: 700px;
+    margin: 50px auto;
+}
+
+header {
+    background-color: darkturquoise;
+    color: white;
+    padding-bottom: 100px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+nav a:link, nav a:visited {
+    padding: 10px 20px;
+    background-color: #4c90bf;
+    text-decoration: none;
+    color: gold;
+}
+
+nav a:hover {
+    background-color: paleturquoise;
+    text-decoration: underline solid;
+}
+
+aside, main, footer {
+    background-color: white;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    margin: 0 20px 20px 0;
+}
+
+aside p {
+    background-color: darkturquoise;
+    font-size: 0.8em;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    padding: 20px ;
+}
+
+main p {
+    font-size: 1.2em;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+main p:last-child {
+    margin-bottom: 0;
+}
+
+.footer {
+    width: 80%;
+    border-top: 5px solid;
+    margin: auto;
+}
