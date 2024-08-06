@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter</title>
+    <style>
+
+        body {
+            overflow-x: hidden;
+        }
+        #twitter {
+            background-image: url("https://samkelhaminspires.wordpress.com/wp-content/uploads/2013/04/twitter-bird-sprite.png");
+            width: 150px;
+            height: 150px;
+            animation-name: fly;
+            animation-duration: 0.5s;
+            animation-timing-function: steps(4);
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes fly {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 600px 0;
+            }
+
+        }
+
+        .container {
+            width: fit-content;
+            position: absolute;
+            animation-name: move;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            from {
+                top: 100%;
+                left: 0
+            } to {
+                top: 0;
+                left: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="twitter"></div>
+</div>
+
+
+</body>
+</html>
