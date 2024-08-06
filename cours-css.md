@@ -357,3 +357,33 @@ La première chose à faire sur une grid, c'est gérer les colonnes :
 
 https://cssgridgarden.com/#fr
 https://css-tricks.com/snippets/css/complete-guide-grid/
+
+
+## Le Responsive Web Design
+
+Un design "responsive" c'est un design qui s'adapte à la taille de l'écran.
+70% des utilisateurs utilisatrices qui utilisent leur téléphone.
+
+=> Mobile First -> On commence le design et le code pour téléphone ( le plus petit écran ) puis on adapte pour les écrans plus grands.
+
+Les outils utilisés pour le responsives :
+- `media-query`
+- `flexbox` + `flexwrap: wrap`
+- unités de mesure relative (vw, vh, %)
+- min-width / max-width 
+- min-height / max-height
+- min()
+- max()
+
+Les medias queries servent à faire des sous- feuilles de style, dans lequel on va mettre (uniquement) les modifications à apporter pour une taille d'écran.
+On peut viser plusieurs types de devices :
+- all
+- screen
+- tv
+- print
+- ...
+
+On peut viser des tailles, ou des fourchettes de taille
+
+Il est conseillé de faire tout le style par défaut et pour petit écran dans la feuille de style classique, puis de modifier au cas par cas avec les media queries.
+

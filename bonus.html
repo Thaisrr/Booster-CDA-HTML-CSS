@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Bonus</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            width: 30%;
+            aspect-ratio: 1/1;
+            border: solid;
+        }
+
+        .item {
+            aspect-ratio: 1/1;
+            background-color: #4c90bf;
+        }
+
+        /**** centrer ****/
+
+        .container1 {
+            width: 300px;
+            aspect-ratio: 1/1;
+            border: solid;
+        }
+
+        .container1 > div {
+            width: 100px;
+            background-color: #4c90bf;
+            aspect-ratio: 1/1;
+            margin: auto;
+        }
+
+        .container2 {
+            width: 300px;
+            aspect-ratio: 1/1;
+            border: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container2 > div {
+            width: 100px;
+            background-color: #4c90bf;
+            aspect-ratio: 1/1;
+        }
+
+        .container3 {
+            width: 300px;
+            aspect-ratio: 1/1;
+            border: solid;
+            display: grid;
+            place-items: center; /* ou place-content */
+        }
+
+        .container3 > div {
+            width: 100px;
+            background-color: #4c90bf;
+            aspect-ratio: 1/1;
+        }
+
+
+        /**** calc ****/
+
+        nav {
+            width: 100%;
+            background-color: aquamarine;
+            height: 70px;
+        }
+
+        header {
+            background-color: violet;
+            height: calc( 100vh - 70px);
+        }
+
+        /**** Clip Path ****/
+
+        .clip {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: violet;
+            clip-path: circle(50% at 50% 50%);
+            border: solid 10px black;
+        }
+
+        .clip2 {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: violet;
+            border-radius: 50000px;
+            border: solid 10px black;
+        }
+
+        /**** scroll ****/
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll-x {
+            height: 200px;
+            width: 500px;
+            border: solid;
+            gap: 20px;
+            overflow-y: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .scroll-x > div {
+            width: 150px;
+            height: 150px;
+            background-color: #4c90bf;
+            display: inline-block;
+        }
+
+        /**** Les variables CSS ***/
+
+        :root {
+            --main-color: #fbfb00;
+            --width: 85%;
+            --main-font: 'Montserrat', sans-serif;
+        }
+
+        .grid .item {
+            background-color: var(--main-color);
+        }
+
+        .dark {
+            --main-color: #ff4400;
+        }
+
+
+        /**** transform ****/
+
+        .t {
+            width: 200px;
+            aspect-ratio: 1/1;
+            color: var(--main-color);
+            border: solid;
+        }
+
+        .transform {
+            transform: translateX(100px) translateY(-100px) rotate(45deg) scale(150%);
+        }
+
+        /*** Les filtres *****/
+
+        .filtre {
+            filter: grayscale(100%) sepia(100%) blur(10px);
+            width: 500px;
+            background-color: #fbfb00;
+        }
+
+
+        /**** Les animations ****/
+
+        .animated {
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: aqua;
+            animation-name: changeColor;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function:ease-in-out; /* ease ease-in-out steps linear */
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes changeColor {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: violet;
+            }
+        }
+
+        .animated2 {
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: #4c90bf;
+            animation: move 2s ease-in-out forwards;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+                color: #4c90bf;
+            }
+            50% {
+                color: aqua;
+            }
+            100% {
+                transform: translateX(500px);
+            }
+        }
+
+        /***** support : sous feuille de calcule pour les propriétés pas bien prise en compte *****/
+        @supports (display: grid) {
+            .element {
+                display: grid;
+            }
+        }
+
+
+        @supports not (display: grid) {
+            .element {
+                display: block;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body class="dark">
+
+<h1 id="title">Bonus</h1>
+
+<h2>Grilles Responsives</h2>
+
+<div class="grid">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+
+<h2>Centrer un élément</h2>
+<p>Pour centrer un élément horizontalement, on met les margin droites et gauches en "auto"</p>
+<div class="container1">
+    <div></div>
+</div>
+
+<p>Pour centrer horizontalement et verticalement, on peut utiliser les flexbox.</p>
+<div class="container2">
+    <div></div>
+</div>
+
+<p>Deuxième solution, on met en display : grid, et on utilise place-items ou place-content en center.</p>
+<div class="container3">
+    <div></div>
+</div>
+
+<h2>Calc()</h2>
+
+<p>Calc permet de calcules en CSS</p>
+
+<nav>Navigation</nav>
+<header>Header</header>
+
+<h2>Clip Path</h2>
+
+<p>Permet de faire des formes en CSS</p>
+<p><a href="https://bennettfeely.com/clippy/">Generateur de formes</a> </p>
+
+<div class="clip"></div>
+<div class="clip2"></div>
+
+<h2>Le Scroll</h2>
+
+<p>
+    <a href="#title">Voir le titre</a>
+</p>
+
+<div class="scroll-x">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<h2>Transform</h2>
+
+<div class="t">1</div>
+<div class="t transform">2</div>
+<div class="t">3</div>
+
+<h2>Filtres</h2>
+
+<img class="filtre" src="Exercices/assets/cat.jpg" alt="" />
+
+<h2>Animations</h2>
+
+<div class="animated">Coucou</div>
+<div class="animated2">Coucou</div>
+
+</body>
+</html>
+

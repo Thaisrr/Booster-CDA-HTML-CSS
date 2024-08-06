@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le responsive</title>
+    <!-- Pour que le ratio de la fenêtre corresponde au ratio du device utilisé -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<style>
+    .box1 {
+        width: 50%;
+        background-color: pink;
+        min-width: 300px;
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .box2 {
+        background-color: turquoise;
+        width: min(300px, 50%);
+    }
+
+    .box3 {
+        background-color: yellow;
+        width: max(300px, 50%);
+    }
+
+    .box4 {
+        background-color: #4c90bf;
+        border: solid 2px black;
+        padding: 50px;
+        aspect-ratio: 1/1;
+    }
+
+    /* pour les écrans supérieurs à 700px de large */
+    @media screen and (min-width: 700px) and (max-width: 1000px) {
+        .box4 {
+            background-color: violet;
+        }
+    }
+
+    /* Nouvelle syntaxe CSS */
+    @media screen and (width >= 1200px) {
+        .box4 {
+            background-color: aquamarine;
+        }
+    }
+
+
+
+</style>
+<body>
+
+<h1>Le responsive web design</h1>
+
+<h2>Min width / Max width</h2>
+
+<div class="box1">
+    Coucou !
+</div>
+
+<h2>Min() Max()</h2>
+
+<div class="box2">
+    Min()
+</div>
+
+<div class="box3">
+    Max()
+</div>
+
+<h2>Media Queries</h2>
+
+<div class="box4">
+    media-query
+</div>
+</body>
+</html>

@@ -79,3 +79,21 @@ h2 {
     border-radius: 5px;
     align-items: center;
 }
+
+@media screen and (width <= 1200px) {
+    /* 2 colonnes */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (width <= 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/horizon-zero-dawn-4k-pictures-of-aloy-ben-lewis.jpg");
+    }
+}
