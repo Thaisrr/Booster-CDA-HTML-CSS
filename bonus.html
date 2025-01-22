@@ -199,19 +199,35 @@
             }
         }
 
+        /***** starting style *****/
+
+        .box-starting {
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: #4c90bf;
+            transition: background-color 2s;
+        }
+
+        /* s'applique a chargement de la page, pas au moment où la box devient visible **/
+        @starting-style {
+            .box-starting {
+                background-color: red;
+            }
+        }
+
         /***** support : sous feuille de calcule pour les propriétés pas bien prise en compte *****/
         @supports (display: grid) {
             .element {
                 display: grid;
             }
         }
-
-
         @supports not (display: grid) {
             .element {
                 display: block;
             }
         }
+
+
 
 
 
@@ -297,6 +313,10 @@
 
 <div class="animated">Coucou</div>
 <div class="animated2">Coucou</div>
+
+<h2>Starting style</h2>
+
+<div class="box-starting">Coucou</div>
 
 </body>
 </html>
